@@ -1,0 +1,36 @@
+.hero-section {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 200px;
+  font-size: 17px;
+}
+.hero-section h1 {
+  font-family: "Noto Sans Tai Le", sans-serif;
+  color: #252525;
+  letter-spacing: 5px;
+}
+
+.personal-photo-container img {
+  border-radius: 50%;
+  height: 320px;
+  display: block;
+}
+
+@media (width < 1000px) {
+  .hero-section {
+    display: flex;
+    padding: 15px;
+    margin-top: 100px;
+    flex-direction: column;
+    font-size: 12px;
+  }
+  .hero-section h1 {
+    text-align: center;
+  }
+  .personal-photo-container img {
+    height: 220px;
+    margin-top: 50px;
+  }
+}
