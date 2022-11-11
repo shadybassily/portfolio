@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./navbar.styles.css";
 import { motion, useScroll } from "framer-motion";
 import logo from "../../assets/images/logo2.png";
-
+import ProgressBar from "../progress-bar/ProgressBar.component";
 export default function Navbar() {
   const { scrollY } = useScroll();
   const [currentScroll, setCurrentScroll] = useState(0);
@@ -33,6 +33,7 @@ export default function Navbar() {
         <li className="link">projects</li>
         <li className="link">contact</li>
       </ul>
+      <ProgressBar />
     </motion.nav>
   );
 }

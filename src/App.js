@@ -1,13 +1,15 @@
-import './App.css';
-import Hero from './components/hero/Hero.component';
-import Navbar from './components/navbar/Navbar.component';
+import "./App.css";
+import Navbar from "./components/navbar/Navbar.component";
+import Hero from "./components/hero/Hero.component";
+import About from "./components/about/About.component";
 
 function App() {
   return (
-   <div className='parent-container'>
-    <Navbar />
-    <Hero />
-   </div>
+    <div>
+      <Navbar />
+      <Hero />
+      <About />
+    </div>
   );
 }
 

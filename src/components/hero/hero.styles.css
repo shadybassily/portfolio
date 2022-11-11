@@ -1,10 +1,14 @@
 .hero-section {
-  height: fit-content;
+  /* style */
+  font-size: 17px;
+  padding: 15px 60px;
+  /* position */
   display: flex;
+  margin-top: 150px;
+  margin-bottom: 50px;
   align-items: center;
   justify-content: space-between;
-  margin-top: 200px;
-  font-size: 17px;
+  overflow: hidden;
 }
 .hero-section h1 {
   font-family: "Noto Sans Tai Le", sans-serif;

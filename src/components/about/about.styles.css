@@ -1,0 +1,15 @@
+.about-section{
+    background-color: #fff;
+}
+
+.about-section h2 {
+    border: 1px solid black;
+}
+
+table,tr,td{
+    border: 1px solid;
+}
+table {
+    width: 100%;
+    display: flex;
+}
