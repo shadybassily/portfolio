@@ -2,24 +2,25 @@ import React from "react";
 import "./project-card.styles.css";
 import { motion } from "framer-motion";
 import { AiFillGithub } from "react-icons/ai";
-const card = {
-  hovered: {
-    filter: "brightness(75%)",
-    backgroundSize: "55% 45%",
-  },
-  notHovered: {
-    filter: "brightness(100%)",
-  },
-};
+import { BiWorld } from 'react-icons/bi';
+// const card = {
+//   hovered: {
+//     filter: "brightness(75%)",
+//     backgroundSize: "55% 45%",
+//   },
+//   notHovered: {
+//     filter: "brightness(100%)",
+//   },
+// };
 
-const iconsContainer = {
-  hovered: {
-    y: 5,
-  },
-  notHovered: {
-    y: -50,
-  },
-};
+// const iconsContainer = {
+//   hovered: {
+//     y: 0,
+//   },
+//   notHovered: {
+//     y: -50,
+//   },
+// };
 export default function ProjectCard(props) {
   const{name,gitHubUrl,visitUrl,projectPhoto} = props.project
   const openInNewTab = (url) => {
@@ -30,15 +31,15 @@ export default function ProjectCard(props) {
     <motion.div
       className="card"
       style={{ backgroundImage: `url(${projectPhoto})` }}
-      variants={card}
-      initial="notHovered"
-      whileHover="hovered"
-      transition={{ duration: 0.3 }}
+      // variants={card}
+      // initial="notHovered"
+      // whileHover="hovered"
+      // transition={{ duration: 0.3 }}
     >
       <motion.div
         className="icons-container"
-        variants={iconsContainer}
-        transition={{ duration: 0.3 }}
+        // variants={iconsContainer}
+        // transition={{ duration: 0.3 }}
       >
         <div
           className="github-icon"
@@ -54,7 +55,7 @@ export default function ProjectCard(props) {
             openInNewTab(visitUrl);
           }}
         >
-          visit
+          <BiWorld />
         </div>
       </motion.div>
       <div className="project-name">{name}</div>

@@ -11,6 +11,7 @@ export default function Navbar() {
       setCurrentScroll(latest);
     });
   }, []);
+
   return (
     <motion.nav
       animate={{

@@ -6,30 +6,34 @@
   cursor: pointer;
   overflow: hidden;
   margin-right: 25px;
+  transition: all 0.4s;
   /* background */
   background-position: center;
   background-size: 60% 50%;
   background-repeat: no-repeat;
   background-color: var(--white);
 }
-
+.card:hover {
+  background-size: 55% 45%;
+  filter: brightness(80%);
+}
 .icons-container {
   /* style */
-  width: 50%;
+  width: 30%;
+  background-color: var(--green);
+  border-radius: 5px;
+  padding: 0px 5px;
   /* position */
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  transform: translateY(-100px);
+  transition: all 0.5s;
 }
 .visit-icon {
-  background-color: var(--green);
-  color: var(--white);
-  padding: 3px 15px;
-  border-radius: 10px;
-  transition: all 0.2s;
+  font-size: 30px;
 }
-
 .github-icon {
   font-size: 30px;
   padding-top: 2px;
@@ -37,7 +41,10 @@
 }
 .visit-icon:hover,
 .github-icon:hover {
-  opacity: 0.8;
+  color: var(--white);
+}
+.card:hover > .icons-container {
+  transform: translateY(-5px);
 }
 
 .project-name {
@@ -52,7 +59,7 @@
 }
 
 @media (width < 700px) {
-  .card{
+  .card {
     margin-right: 0px;
     margin-bottom: 20px;
     width: 90%;
@@ -60,7 +67,7 @@
 }
 
 @media (900px > width > 700px) {
-  .card{
+  .card {
     margin-right: 10px;
     margin-bottom: 20px;
     width: 50%;
