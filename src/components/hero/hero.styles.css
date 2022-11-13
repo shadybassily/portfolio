@@ -10,10 +10,7 @@
   overflow: hidden;
 }
 .hero-section h1 {
-  font-family: 'Noto Sans Mende Kikakui', sans-serif;
-  word-spacing: 2px;
-  line-height: 35px;
-  font-weight: bold;
+  font-family: 'Noto Sans Tai Le', sans-serif;
   color: #252525;
   letter-spacing: 3px;
 }
@@ -83,6 +80,7 @@
   .hero-section h1 {
     text-align: center;
     padding-top: 30px;
+    letter-spacing: 2px;
   }
   .personal-photo-container img {
     height: 230px;

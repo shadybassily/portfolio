@@ -2,7 +2,7 @@
   padding-top: 100px;
   padding-bottom: 150px;
 }
-.info {
-  font-family: "Source Sans Pro", sans-serif;
+.about .info {
+  word-spacing: 1px;
   width: 95%;
 }

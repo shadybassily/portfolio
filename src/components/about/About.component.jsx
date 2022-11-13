@@ -4,7 +4,7 @@ import "./about.styles.css";
 
 export default function About() {
   return (
-    <section className="section about ">
+    <section className="section about">
       <h2 className="section-title">About Me</h2>
       <div className="info-container">
         <motion.div
@@ -14,7 +14,7 @@ export default function About() {
           transition={{ duration: 0.8 }}
         >
           <p>
-            * a highly motivated and self-drived web developer, who's in love with
+            a highly motivated and self-drived web developer, who's in love with
             coding, building things is a passion for me.
           </p>
           <p>
