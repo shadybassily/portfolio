@@ -11,7 +11,7 @@ export default function Hero() {
         transition={{ duration: 0.8, delay: 0.1 }}
       >
         I<span className="green">'</span>m
-        <span className="green"> Shady Bassily</span>, <br />
+        <span className="green"> Shady Bassily</span>, 
         a Web Developer, <br />
         and I Have a Thing For Sushi
         <motion.div
