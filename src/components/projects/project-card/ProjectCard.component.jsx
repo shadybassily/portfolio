@@ -5,7 +5,7 @@ import { AiFillGithub } from "react-icons/ai";
 const card = {
   hovered: {
     filter: "brightness(75%)",
-    backgroundSize: "60% 45%",
+    backgroundSize: "55% 45%",
   },
   notHovered: {
     filter: "brightness(100%)",
