@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.23dc69d8.css",
+    "main.js": "/portfolio/static/js/main.f4f27e83.js",
+    "static/media/personal-photo.png": "/portfolio/static/media/personal-photo.1d8ab7d2ad6234f8be35.png",
+    "static/media/logo.png": "/portfolio/static/media/logo.b3bc588646165a919cec.png",
+    "index.html": "/portfolio/index.html",
+    "static/media/crown.svg": "/portfolio/static/media/crown.3a4e2b15908e7a4c25343677d232b7e6.svg",
+    "main.23dc69d8.css.map": "/portfolio/static/css/main.23dc69d8.css.map",
+    "main.f4f27e83.js.map": "/portfolio/static/js/main.f4f27e83.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23dc69d8.css",
+    "static/js/main.f4f27e83.js"
+  ]
+}
