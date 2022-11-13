@@ -11,6 +11,8 @@
 }
 .hero-section h1 {
   font-family: 'Noto Sans Tai Tham', sans-serif;
+  font-weight: bold;
+  font-style: italic;
   color: #252525;
   letter-spacing: 3px;
 }
