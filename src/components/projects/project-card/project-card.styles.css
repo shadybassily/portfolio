@@ -31,13 +31,9 @@
   transform: translateY(-100px);
   transition: all 0.5s;
 }
-.visit-icon {
+
+.github-icon , .visit-icon{
   font-size: 30px;
-}
-.github-icon {
-  font-size: 30px;
-  padding-top: 2px;
-  transition: all 0.2;
 }
 .visit-icon:hover,
 .github-icon:hover {
@@ -63,6 +59,10 @@
     margin-right: 0px;
     margin-bottom: 20px;
     width: 90%;
+  }
+
+  .github-icon , .visit-icon{
+    font-size: 25px;
   }
 }
 

@@ -30,10 +30,6 @@ export default function Hero() {
         transition={{ duration: 0.8, delay: 0.1 }}
       >
         <img src={personalPhoto} alt="avatar" />
-        {/* <div className="shiny-glasses">
-          <div className="shiny-glasses-left"></div>
-          <div className="shiny-glasses-right"></div>
-        </div> */}
       </motion.div>
     </motion.div>
   );
