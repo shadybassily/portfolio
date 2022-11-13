@@ -34,6 +34,7 @@ export default function ProjectCard(props) {
       variants={card}
       initial="notHovered"
       whileHover="hovered"
+      whileTap="hovered"
       transition={{ duration: 0.3 }}
     >
       <motion.div

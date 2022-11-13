@@ -79,6 +79,7 @@ a {
     border-top: 2px solid var(--green);
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
 }
 

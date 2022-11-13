@@ -1,7 +1,7 @@
 .card {
   /* style */
   border-radius: 20px;
-  width: 230px;
+  width: 25%;
   height: 300px;
   cursor: pointer;
   overflow: hidden;
@@ -54,5 +54,7 @@
 @media (width < 800px) {
   .card{
     margin-right: 0px;
+    margin-bottom: 20px;
+    width: 70%;
   }
 }
