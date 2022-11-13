@@ -2,7 +2,7 @@ import React from "react";
 import "./projects.styles.css";
 import ProjectCard from "./project-card/ProjectCard.component";
 import crownClothingPhoto from '../../assets/images/projects/crown.svg'
-import tetrisPhoto from '../../assets/images/projects/tetris.jpeg'
+import tetrisPhoto from '../../assets/images/projects/tetris.png'
 export default function Projects() {
   const projectsData = [
     {

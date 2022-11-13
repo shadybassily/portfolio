@@ -62,7 +62,7 @@ a {
 
 .section .info-container {
   border-left: 2px solid var(--green);
-  width: 85%;
+  width: 80%;
   padding: 15px 25px;
   text-transform: capitalize;
   font-size: 20px;

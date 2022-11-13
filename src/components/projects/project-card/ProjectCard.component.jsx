@@ -22,7 +22,6 @@ const iconsContainer = {
 };
 export default function ProjectCard(props) {
   const{name,gitHubUrl,visitUrl,projectPhoto} = props.project
-  console.log(projectPhoto)
   const openInNewTab = (url) => {
     // setting target to _blank with window.open
     window.open(url, "_blank", "noopener,noreferrer");
@@ -34,7 +33,6 @@ export default function ProjectCard(props) {
       variants={card}
       initial="notHovered"
       whileHover="hovered"
-      whileTap="hovered"
       transition={{ duration: 0.3 }}
     >
       <motion.div
