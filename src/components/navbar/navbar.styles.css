@@ -38,13 +38,20 @@ nav .nav-links .link {
   margin-left: 15px;
 }
 
-@media (width < 800px) {
+@media (width < 700px) {
   nav{
    flex-direction: column;
+  }
+  nav .logo {
+    width: 30px;
+    top: 15px;
   }
   .nav-links{
     width: 100%;
     position: absolute;
     top: 15px;
+  }
+  nav .nav-links .link {
+    width: 60px;
   }
 }
