@@ -1,7 +1,7 @@
 nav {
   /* style */
   background-color: var(--white);
-  padding: 0px 15px;
+  padding: 0px 30px;
   /* position */
   display: flex;
   justify-content: space-between;
@@ -38,3 +38,13 @@ nav .nav-links .link {
   margin-left: 15px;
 }
 
+@media (width < 800px) {
+  nav{
+   flex-direction: column;
+  }
+  .nav-links{
+    width: 100%;
+    position: absolute;
+    top: 15px;
+  }
+}
