@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./navbar.styles.css";
 import { motion, useScroll } from "framer-motion";
-import logo from "../../assets/images/logo2.png";
+import logo from "../../assets/images/logo.png";
 import ProgressBar from "../progress-bar/ProgressBar.component";
 export default function Navbar() {
   const { scrollY } = useScroll();
@@ -28,10 +28,10 @@ export default function Navbar() {
       </motion.div>
 
       <ul className="nav-links">
-        <li className="link">home</li>
-        <li className="link">about</li>
-        <li className="link">projects</li>
-        <li className="link">contact</li>
+        <li className="link underline-on-hover">home</li>
+        <li className="link underline-on-hover">about</li>
+        <li className="link underline-on-hover">projects</li>
+        <li className="link underline-on-hover">contact</li>
       </ul>
       <ProgressBar />
     </motion.nav>

@@ -1,0 +1,64 @@
+import React from "react";
+import "./project-card.styles.css";
+import projectPhoto from "../../../assets/images/projects/crown.svg";
+import { motion } from "framer-motion";
+import { AiFillGithub } from "react-icons/ai";
+const card = {
+  hovered: {
+    filter: "brightness(75%)",
+    backgroundSize: "55% 55%",
+  },
+  notHovered: {
+    backgroundSize: "60% 60%",
+    filter: "brightness(100%)",
+  },
+};
+
+const iconsContainer = {
+  hovered: {
+    y: 5,
+  },
+  notHovered: {
+    y: -50,
+  },
+};
+export default function ProjectCard() {
+  const openInNewTab = (url) => {
+    // setting target to _blank with window.open
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+  return (
+    <motion.div
+      className="card"
+      style={{ backgroundImage: `url(${projectPhoto})` }}
+      variants={card}
+      initial="notHovered"
+      whileHover="hovered"
+      transition={{ duration: 0.3 }}
+    >
+      <motion.div
+        className="icons-container"
+        variants={iconsContainer}
+        transition={{ duration: 0.3 }}
+      >
+        <div
+          className="github-icon"
+          onClick={() => {
+            openInNewTab("https://github.com/shadybassily/crwn-clothing");
+          }}
+        >
+          <AiFillGithub />
+        </div>
+        <div
+          className="visit-icon"
+          onClick={() => {
+            openInNewTab("https://crown-clothing-productio-c9da6.web.app/");
+          }}
+        >
+          visit
+        </div>
+      </motion.div>
+      <div className="project-name">Crwn-Clothing</div>
+    </motion.div>
+  );
+}

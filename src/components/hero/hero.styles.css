@@ -1,11 +1,10 @@
 .hero-section {
   /* style */
   font-size: 17px;
-  padding: 15px 60px;
+  padding: 150px 60px;
+  background-color: var(--gray);
   /* position */
   display: flex;
-  margin-top: 150px;
-  margin-bottom: 50px;
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
@@ -13,28 +12,76 @@
 .hero-section h1 {
   font-family: "Noto Sans Tai Le", sans-serif;
   color: #252525;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
-
+.personal-photo-container {
+  position: relative;
+}
 .personal-photo-container img {
   border-radius: 50%;
   height: 320px;
   display: block;
+  border-radius: 50%;
+  box-shadow: 0 0 50px #ccc;
 }
+/* 
+.shiny-glasses {
+  width: 91px;
+  height: 33px;
+  position: absolute;
+  top: 68px;
+  left: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+.shiny-glasses-left,
+.shiny-glasses-right {
+  background-image: linear-gradient(
+    120deg,
+    transparent,
+    transparent,
+    transparent,
+    white,
+    transparent,
+    transparent,
+    transparent
+  );
+  background-repeat: no-repeat;
+  background-size: 1500% 200%;
+  height: 95%;
+  width: 38%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 43%;
+  border-top-right-radius: 15%;
+  border-top-left-radius: 25%;
+  animation: shiny-glasses-animation 3s ease infinite;
+}
+
+@keyframes shiny-glasses-animation {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 120% 120%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+} */
 
 @media (width < 1000px) {
   .hero-section {
+    font-size: 13px;
     display: flex;
-    padding: 15px;
-    margin-top: 100px;
-    flex-direction: column;
-    font-size: 12px;
+    padding: 120px 15px;
+    flex-direction: column-reverse;
   }
   .hero-section h1 {
     text-align: center;
+    padding-top: 30px;
   }
   .personal-photo-container img {
-    height: 220px;
-    margin-top: 50px;
+    height: 230px;
   }
 }
