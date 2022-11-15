@@ -77,6 +77,9 @@
 
 @media (width < 700px){
   .hero-section h1 {
-    font-family: 'IBM Plex Sans JP', sans-serif;
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 30px;
   }
 }
