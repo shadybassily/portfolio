@@ -16,29 +16,9 @@ nav .logo {
   width: 40px;
 }
 
-nav .nav-links {
-  /* style */
-  list-style: none;
-  font-size: 14px;
-  /* position */
-  display: flex;
-  justify-content: space-between;
-}
 
-nav .nav-links .link {
-  /* style */
-  text-transform: uppercase;
-  min-width: fit-content;
-  width: 75px;
-  padding: 5px;
-  text-align: center;
-  color: #252525;
-  cursor: pointer;
-  /* position */
-  margin-left: 15px;
-}
 
-@media (width < 700px) {
+/* @media (width < 700px) {
   nav {
     flex-direction: column;
   }
@@ -55,4 +35,4 @@ nav .nav-links .link {
     margin-left: 0;
     width: 50px;
   }
-}
+} */
