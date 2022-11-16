@@ -21,8 +21,8 @@ export default function NavMenu() {
   );
 
   const menuAnimation = {
-    visible: { y: 10 },
-    hidden: { y: -200},
+    visible: { scale: 1,height:"fit-content" },
+    hidden: { scale: 0,height:0},
 
   };
 
@@ -45,7 +45,7 @@ export default function NavMenu() {
             variants={menuAnimation}
             initial="hidden"
             animate={isMenuVisible ? "visible" : "hidden"}
-            transition={{duration:0.7}}
+            transition={{duration:0.3}}
           >
             {navMenuItems}
           </motion.div>

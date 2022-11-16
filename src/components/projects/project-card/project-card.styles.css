@@ -6,23 +6,24 @@
   cursor: pointer;
   overflow: hidden;
   margin-right: 25px;
+  margin-top: 15px;
   transition: all 0.4s;
   /* background */
   background-position: center;
-  background-size: 60% 50%;
+  background-size: 40% 40%;
   background-repeat: no-repeat;
   background-color: var(--white);
 }
 .card:hover {
-  background-size: 55% 45%;
+  background-size: 35% 35%;
   filter: brightness(80%);
 }
 .icons-container {
   /* style */
   width: 30%;
-  background-color: var(--green);
+  /* background-color: var(--green); */
   border-radius: 5px;
-  padding: 0px 5px;
+  padding: 10px 5px;
   /* position */
   display: flex;
   justify-content: space-between;
@@ -33,11 +34,11 @@
 }
 
 .github-icon , .visit-icon{
-  font-size: 30px;
+  font-size: 25px;
 }
 .visit-icon:hover,
 .github-icon:hover {
-  color: var(--white);
+  /* color: var(--white); */
 }
 .card:hover > .icons-container {
   transform: translateY(-5px);
@@ -56,6 +57,7 @@
 
 @media (width < 700px) {
   .card {
+
     margin-right: 0px;
     margin-bottom: 20px;
     width: 90%;

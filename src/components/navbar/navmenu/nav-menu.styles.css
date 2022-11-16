@@ -20,26 +20,23 @@ nav .nav-links .link {
   margin-left: 15px;
   margin: 0 auto;
 }
-nav .nav-links .menu-icon{
-    font-size: 25px;
-    z-index: -2;
-
+nav .nav-links .menu-icon {
+  font-size: 25px;
+  cursor: pointer;
 }
 .animated-menu {
   position: absolute;
   top: 42px;
-  right: 30px;
-  z-index: 0;
+  right: 25px;
+  z-index: 2;
   padding: 15px;
   background-color: white;
 }
 
-
 @media (width < 700px) {
-
-nav .nav-links .link {
+  nav .nav-links .link {
     /* style */
-  border-bottom: 1px solid rgba(128, 128, 128, 0.456);
-  width: 65px ;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.456);
+    width: 65px;
   }
 }

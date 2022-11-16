@@ -1,26 +1,8 @@
 import React from "react";
 import "./project-card.styles.css";
-import { motion } from "framer-motion";
 import { AiFillGithub } from "react-icons/ai";
 import { BiWorld } from 'react-icons/bi';
-// const card = {
-//   hovered: {
-//     filter: "brightness(75%)",
-//     backgroundSize: "55% 45%",
-//   },
-//   notHovered: {
-//     filter: "brightness(100%)",
-//   },
-// };
 
-// const iconsContainer = {
-//   hovered: {
-//     y: 0,
-//   },
-//   notHovered: {
-//     y: -50,
-//   },
-// };
 export default function ProjectCard(props) {
   const{name,gitHubUrl,visitUrl,projectPhoto} = props.project
   const openInNewTab = (url) => {
@@ -28,19 +10,11 @@ export default function ProjectCard(props) {
     window.open(url, "_blank", "noopener,noreferrer");
   };
   return (
-    <motion.div
+    <div
       className="card"
-      style={{ backgroundImage: `url(${projectPhoto})` }}
-      // variants={card}
-      // initial="notHovered"
-      // whileHover="hovered"
-      // transition={{ duration: 0.3 }}
-    >
-      <motion.div
-        className="icons-container"
-        // variants={iconsContainer}
-        // transition={{ duration: 0.3 }}
-      >
+      style={{ backgroundImage: `url(${projectPhoto})` }}>
+      <div
+        className="icons-container">
         <div
           className="github-icon"
           onClick={() => {
@@ -57,8 +31,8 @@ export default function ProjectCard(props) {
         >
           <BiWorld />
         </div>
-      </motion.div>
+      </div>
       <div className="project-name">{name}</div>
-    </motion.div>
+    </div>
   );
 }

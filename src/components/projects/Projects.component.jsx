@@ -3,6 +3,8 @@ import "./projects.styles.css";
 import ProjectCard from "./project-card/ProjectCard.component";
 import crownClothingPhoto from '../../assets/images/projects/crown.svg'
 import tetrisPhoto from '../../assets/images/projects/tetris.png'
+import calculatorPhoto from '../../assets/images/projects/calculator.jpg'
+
 export default function Projects() {
   const projectsData = [
     {
@@ -19,6 +21,14 @@ export default function Projects() {
       gitHubUrl: "https://github.com/shadybassily/tetris",
       visitUrl: "https://shadybassily.github.io/tetris/",
     },
+    {
+      id: 3,
+      name: "Calculator",
+      projectPhoto:calculatorPhoto,
+      gitHubUrl: "https://github.com/shadybassily/Calculator",
+      visitUrl: "https://shadybassily.github.io/Calculator/",
+    },
+
   ];
   return (
     <div className="section projects">
