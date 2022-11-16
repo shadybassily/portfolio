@@ -66,7 +66,7 @@ export default function ContactForm() {
   //# a comnination between react form that listens on the data passed, if the data is valid
   // the sendEmail function will be called
   const onSubmit = (data,e)=>{
-    // sendEmail(e)
+    sendEmail(e)
   }
   return (
     <div className="section contact">
