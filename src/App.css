@@ -8,6 +8,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Oswald", sans-serif;
+  -webkit-appearance: none;
 }
 a {
   all: unset;
