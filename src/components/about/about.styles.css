@@ -6,41 +6,38 @@
   word-spacing: 1px;
   width: 95%;
 }
-.download {
+.download-btn-container {
+  width: 170px;
+  display: flex;
+  justify-content: center;
+}
+.download-btn{
+  /* style */
+  padding: 5px 15px;
   cursor: pointer;
-  height: 40px;
-  width: 130px;
-  transform-origin: center;
-  text-transform: capitalize;
-  transition: 0.2s;
-  letter-spacing: 1px;
-  padding: 10px 15px;
-  font-size: 16px;
-  /* colors and borders*/
+  border-radius: 5px;
   color: var(--white);
   background-color: var(--green);
   border: 1px solid var(--green);
-  border-radius: 5px;
+  font-size: 17px;
+  height: 30px;
   /* position */
-  margin-top: 20px;
+  display: inline-block;
+  overflow: hidden;
+  margin-top: 15px;
+}
+.dowload-text-container{
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.download .checked{
-position: absolute;
-bottom: -35px;
-left: 52px;
-color: white;
-font-size: 25px;
+.download-icon {
+  display: inline-block;
+  padding: 0px 5px;
 }
-.download-text{
-  position: absolute;
+.download-complete {
+  width: fit-content;
+  margin-top: 15px;
 }
-.download-btn-container{
-  margin-top: 20px;
-  width: 130px;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-}
+
