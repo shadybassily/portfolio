@@ -1,17 +1,19 @@
 import { motion } from "framer-motion";
 import React from "react";
 import "./about.styles.css";
+import DownloadCV from "./DownloadCV.component";
 
 export default function About() {
-  const windowWidth= window.screen.width
+  const windowWidth = window.screen.width;
+
   return (
     <section className="section about">
       <h2 className="section-title">About Me</h2>
       <div className="info-container">
         <motion.div
           className="info"
-          initial={windowWidth > 800 ? { x:"-100%" } : {y:"-100%"}}
-           whileInView={windowWidth > 800 ? { x:0 } : {y:0}}
+          initial={windowWidth > 800 ? { x: "-100%" } : { y: "-100%" }}
+          whileInView={windowWidth > 800 ? { x: 0 } : { y: 0 }}
           transition={{ duration: 0.8 }}
         >
           <p>
@@ -22,6 +24,7 @@ export default function About() {
             joined the information technology institute <strong>(ITI)</strong>{" "}
             Django & ReactJS full stack intensive course.
           </p>
+          <DownloadCV />
         </motion.div>
       </div>
     </section>

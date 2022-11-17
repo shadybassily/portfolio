@@ -73,11 +73,11 @@ export default function ContactForm() {
       <h2 className="section-title">Say Hi</h2>
       <div className="info-container">
         <form ref={form} onSubmit={handleSubmit(onSubmit)}>
-          <FormInput label="Name" type="text" name="user_name" register={register("name")}/>
+          <FormInput label="Name" type="text" name="name" register={register("name")}/>
           {errors?.name && <Error message = {errors.name.message} />}
           <FormInput label="Subject" type="text" name="subject"  register={register("subject")}/>
           {errors?.subject && <Error message = {errors.subject.message} />}
-          <FormInput label="Email" type="text" name="user_email" register={register("email")}/>
+          <FormInput label="Email" type="text" name="email" register={register("email")}/>
           {errors?.email && <Error message = {errors.email.message} />}
           <div className="input-holder">
             <textarea name="message" placeholder=" " {...register("message")}/>

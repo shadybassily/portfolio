@@ -1,8 +1,46 @@
-.about{
+.about {
   padding-top: 100px;
   padding-bottom: 150px;
 }
 .about .info {
   word-spacing: 1px;
   width: 95%;
+}
+.download {
+  cursor: pointer;
+  height: 40px;
+  width: 130px;
+  transform-origin: center;
+  text-transform: capitalize;
+  transition: 0.2s;
+  letter-spacing: 1px;
+  padding: 10px 15px;
+  font-size: 16px;
+  /* colors and borders*/
+  color: var(--white);
+  background-color: var(--green);
+  border: 1px solid var(--green);
+  border-radius: 5px;
+  /* position */
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.download .checked{
+position: absolute;
+bottom: -35px;
+left: 52px;
+color: white;
+font-size: 25px;
+}
+.download-text{
+  position: absolute;
+}
+.download-btn-container{
+  margin-top: 20px;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
