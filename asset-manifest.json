@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.06bcb8e4.css",
-    "main.js": "/portfolio/static/js/main.540e8875.js",
+    "main.css": "/portfolio/static/css/main.1bd687fc.css",
+    "main.js": "/portfolio/static/js/main.e918da86.js",
     "static/media/Shady_Bassily_cv_front_end.pdf": "/portfolio/static/media/Shady_Bassily_cv_front_end.ebc38b476c20a5f58e30.pdf",
     "static/media/personal-photo.png": "/portfolio/static/media/personal-photo.1d8ab7d2ad6234f8be35.png",
     "static/media/tetris.png": "/portfolio/static/media/tetris.472200f3dd1f7cb23262.png",
@@ -9,11 +9,11 @@
     "static/media/calculator.jpg": "/portfolio/static/media/calculator.4f36769114b6d710ca91.jpg",
     "index.html": "/portfolio/index.html",
     "static/media/crown.svg": "/portfolio/static/media/crown.3a4e2b15908e7a4c25343677d232b7e6.svg",
-    "main.06bcb8e4.css.map": "/portfolio/static/css/main.06bcb8e4.css.map",
-    "main.540e8875.js.map": "/portfolio/static/js/main.540e8875.js.map"
+    "main.1bd687fc.css.map": "/portfolio/static/css/main.1bd687fc.css.map",
+    "main.e918da86.js.map": "/portfolio/static/js/main.e918da86.js.map"
   },
   "entrypoints": [
-    "static/css/main.06bcb8e4.css",
-    "static/js/main.540e8875.js"
+    "static/css/main.1bd687fc.css",
+    "static/js/main.e918da86.js"
   ]
 }
