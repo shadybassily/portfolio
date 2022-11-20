@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import React from "react";
+import AnimatingBtn from "../animating-btn/AnimatingBtn.component";
 import "./about.styles.css";
-import DownloadCV from "./DownloadCV.component";
-
+import cv from "../../assets/cv/Shady_Bassily_cv_front_end.pdf";
 export default function About() {
   const windowWidth = window.screen.width;
 
@@ -24,7 +24,11 @@ export default function About() {
             joined the information technology institute <strong>(ITI)</strong>{" "}
             Django & ReactJS full stack intensive course.
           </p>
-          <DownloadCV />
+          <AnimatingBtn>
+            <a href={cv} download className="download-cv">
+              Download CV
+            </a>
+          </AnimatingBtn>
         </motion.div>
       </div>
     </section>

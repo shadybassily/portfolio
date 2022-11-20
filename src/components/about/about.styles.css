@@ -6,38 +6,7 @@
   word-spacing: 1px;
   width: 95%;
 }
-.download-btn-container {
-  width: 170px;
-  display: flex;
-  justify-content: center;
+/* overriding the position of the animating btn */
+.about .info .animating-btn-container { 
+  margin: 15px 0;
 }
-.download-btn{
-  /* style */
-  padding: 5px 15px;
-  cursor: pointer;
-  border-radius: 5px;
-  color: var(--white);
-  background-color: var(--green);
-  border: 1px solid var(--green);
-  font-size: 17px;
-  height: 30px;
-  /* position */
-  display: inline-block;
-  overflow: hidden;
-  margin-top: 15px;
-}
-.dowload-text-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.download-icon {
-  display: inline-block;
-  padding: 0px 5px;
-}
-.download-complete {
-  width: fit-content;
-  margin-top: 15px;
-}
-

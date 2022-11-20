@@ -2,12 +2,12 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import FormInput from "./FormInput.component";
 import "./contact-form.styles.css";
-import Submit from "./submit/Submit.component";
 
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import Error from "./Error.component";
+import AnimatingBtn from "../animating-btn/AnimatingBtn.component";
 
 export default function ContactForm() {
   // yup schema
@@ -85,7 +85,7 @@ export default function ContactForm() {
           </div>
           {errors?.message && <Error message = {errors.message.message} />}
           {/* disable the animation if there are erros */}
-          <Submit disable={Object.keys(errors).length > 0 ? true : false} />
+          <AnimatingBtn disable={Object.keys(errors).length > 0 ? true : false} type="submit">Send</AnimatingBtn>
         </form>
       </div>
     </div>
