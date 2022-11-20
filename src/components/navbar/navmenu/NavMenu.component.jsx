@@ -15,9 +15,9 @@ export default function NavMenu() {
   });
   const navMenuItems = (
     <>
-      <NavHashLink to="/#about" smooth><li className="link underline-on-hover">about</li></NavHashLink>
-      <NavHashLink to="/#projects" smooth><li className="link underline-on-hover">projects</li></NavHashLink>
-      <NavHashLink to="/#contact" smooth><li className="link underline-on-hover">contact</li></NavHashLink>
+      <NavHashLink to="portfolio/#about" smooth><li className="link underline-on-hover">about</li></NavHashLink>
+      <NavHashLink to="portfolio/#projects" smooth><li className="link underline-on-hover">projects</li></NavHashLink>
+      <NavHashLink to="portfolio/#contact" smooth><li className="link underline-on-hover">contact</li></NavHashLink>
     </>
   );
 
