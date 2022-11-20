@@ -24,11 +24,10 @@ export default function About() {
             joined the information technology institute <strong>(ITI)</strong>{" "}
             Django & ReactJS full stack intensive course.
           </p>
-          <AnimatingBtn>
-            <a href={cv} download className="download-cv">
-              Download CV
-            </a>
-          </AnimatingBtn>
+
+          <a href={cv} download className="download-cv">
+            <AnimatingBtn> Download CV</AnimatingBtn>
+          </a>
         </motion.div>
       </div>
     </section>
