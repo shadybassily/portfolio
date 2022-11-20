@@ -69,7 +69,7 @@ export default function ContactForm() {
     sendEmail(e)
   }
   return (
-    <div className="section contact">
+    <section className="section contact" id="contact">
       <h2 className="section-title">Say Hi</h2>
       <div className="info-container">
         <form ref={form} onSubmit={handleSubmit(onSubmit)}>
@@ -88,6 +88,6 @@ export default function ContactForm() {
           <AnimatingBtn disable={Object.keys(errors).length > 0 ? true : false} type="submit">Send</AnimatingBtn>
         </form>
       </div>
-    </div>
+    </section>
   );
 }

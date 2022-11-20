@@ -2,6 +2,7 @@ nav .nav-links {
   /* style */
   list-style: none;
   font-size: 14px;
+  min-width: 20%;
   /* position */
   display: flex;
   justify-content: space-between;
@@ -17,7 +18,6 @@ nav .nav-links .link {
   color: #252525;
   cursor: pointer;
   /* position */
-  margin-left: 15px;
   margin: 0 auto;
 }
 nav .nav-links .menu-icon {
@@ -29,14 +29,18 @@ nav .nav-links .menu-icon {
   top: 42px;
   right: 25px;
   z-index: 2;
-  padding: 15px;
+  padding: 10px;
   background-color: white;
 }
 
 @media (width < 700px) {
   nav .nav-links .link {
     /* style */
-    border-bottom: 1px solid rgba(128, 128, 128, 0.456);
-    width: 65px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.248);
+    padding: 10px 0;
+  }
+  nav .nav-links{
+    /* style */
+    min-width: fit-content;
   }
 }

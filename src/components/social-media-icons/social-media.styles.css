@@ -1,0 +1,14 @@
+.social-media-container {
+  /* style */
+  font-size: 1.5rem;
+  width: 35px;
+  /* position */
+  position: fixed;
+  top: 45%;
+  right: 1%;
+  text-align: center;
+}
+
+.icon:hover {
+  cursor: pointer;
+}

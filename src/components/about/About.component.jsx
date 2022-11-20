@@ -7,7 +7,7 @@ export default function About() {
   const windowWidth = window.screen.width;
 
   return (
-    <section className="section about">
+      <section className="section about" id="about">
       <h2 className="section-title">About Me</h2>
       <div className="info-container">
         <motion.div
