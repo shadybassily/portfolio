@@ -4,6 +4,8 @@ import ProjectCard from "./project-card/ProjectCard.component";
 import crownClothingPhoto from '../../assets/images/projects/crown.svg'
 import tetrisPhoto from '../../assets/images/projects/tetris.png'
 import calculatorPhoto from '../../assets/images/projects/calculator.jpg'
+import todoPhoto from '../../assets/images/projects/todo.jpg'
+
 
 export default function Projects() {
   const projectsData = [
@@ -27,6 +29,13 @@ export default function Projects() {
       projectPhoto:calculatorPhoto,
       gitHubUrl: "https://github.com/shadybassily/Calculator",
       visitUrl: "https://shadybassily.github.io/Calculator/",
+    },
+    {
+      id: 4,
+      name: "Todo App",
+      projectPhoto:todoPhoto,
+      gitHubUrl: "https://github.com/shadybassily/todo-app/",
+      visitUrl: "https://shadybassily.github.io/todo-app/",
     },
 
   ];
