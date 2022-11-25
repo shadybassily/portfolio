@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import AnimatingBtn from "../animating-btn/AnimatingBtn.component";
 import "./about.styles.css";
-import cv from "../../assets/cv/Shady_Bassily_cv_front_end.pdf";
+import cv from "../../assets/cv/SHADY_BASSILY_CV.pdf";
 export default function About() {
   const windowWidth = window.screen.width;
 
