@@ -26,7 +26,7 @@ export default function About() {
           </p>
 
           <a href={cv} download className="download-cv">
-            <AnimatingBtn> Download CV</AnimatingBtn>
+            <AnimatingBtn>Download CV</AnimatingBtn>
           </a>
         </motion.div>
       </div>
