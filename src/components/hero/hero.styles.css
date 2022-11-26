@@ -10,7 +10,8 @@
   overflow: hidden;
 }
 .hero-section h1 {
-  font-family: "Noto Sans Tai Le", sans-serif;
+  font-family: 'Roboto', sans-serif;
+
   color: #252525;
   letter-spacing: 3px;
 }
@@ -75,11 +76,3 @@
 }
  
 
-@media (width < 700px){
-  .hero-section h1 {
-    /* font-family: 'Inconsolata', monospace;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 30px; */
-  }
-}
