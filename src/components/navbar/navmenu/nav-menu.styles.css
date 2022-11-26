@@ -26,18 +26,19 @@ nav .nav-links .menu-icon {
 }
 .animated-menu {
   position: absolute;
-  top: 42px;
-  right: 25px;
+  top:60px;
+  right: 0;
+  width: 100%;
   z-index: 2;
   padding: 10px;
-  background-color: white;
+  background-color: var(--white);
 }
 
 @media (width < 700px) {
   nav .nav-links .link {
     /* style */
-    border-bottom: 1px solid rgba(128, 128, 128, 0.248);
     padding: 10px 0;
+    width: 100%;
   }
   nav .nav-links{
     /* style */

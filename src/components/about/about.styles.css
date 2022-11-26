@@ -6,6 +6,11 @@
   word-spacing: 1px;
   width: 95%;
 }
+.about .info p {
+  margin-top: 15px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: none;
+}
 /* overriding the position of the animating btn */
 .about .info .animating-btn-container { 
   margin: 15px 0;
