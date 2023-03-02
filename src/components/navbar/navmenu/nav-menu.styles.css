@@ -19,10 +19,12 @@ nav .nav-links .link {
   cursor: pointer;
   /* position */
   margin: 0 auto;
+
 }
 nav .nav-links .menu-icon {
   font-size: 25px;
   cursor: pointer;
+  
 }
 .animated-menu {
   position: absolute;
@@ -44,4 +46,29 @@ nav .nav-links .menu-icon {
     /* style */
     min-width: fit-content;
   }
+}
+
+
+/* !underline effect */
+.underline-on-hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.underline-on-hover::before {
+  /* style */
+  content: "";
+  height: 45px;
+  width: 100%;
+  background-color: var(--green);
+  z-index: -1;
+  transition: 0.4s;
+  /* position */
+  position: absolute;
+  bottom: 0;
+  left: -1px;
+  transform: translateX(-100%);
+}
+.underline-on-hover:hover::before {
+  transform: translateX(0%);
 }
