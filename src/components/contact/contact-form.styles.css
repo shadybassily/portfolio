@@ -54,7 +54,7 @@ textarea:not(:placeholder-shown) + .label {
   font-size: 12px;
   margin-top: -15px;
 }
-@media (width < 800px) {
+@media (max-device-width : 800px) {
   form {
     width: 100%;
   }

@@ -1,0 +1,12 @@
+.scene-container{
+    /* border: 1px solid black; */
+    height: 80vh;
+}
+
+@media (max-device-width : 800px){
+    .scene-container{
+        /* border: 1px solid black; */
+        height: 60vh;
+    }
+    
+}

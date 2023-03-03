@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./nav-menu.styles.css";
 import { AiOutlineMenu } from "react-icons/ai";
 import { motion } from "framer-motion";
-
 import { NavHashLink } from 'react-router-hash-link';
+
 export default function NavMenu() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [isMenuVisible, setIsMenuVisible] = useState(false);
