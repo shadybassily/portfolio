@@ -81,8 +81,8 @@ const Info = () => {
 };
 
 const Symbols = ({commonTextOptions}) => {
-   const { scene: reactIcon } = useGLTF('../../../public/models/reactjs.glb');
-   reactIcon.scale.set(0.3, 0.4, 0.3);
+   const { scene: reactIcon } = useGLTF('../../../public/models/react.glb');
+   reactIcon.scale.set(2, 3, 2.3);
 
    const tagPoisiton = width < 800 ? [1, 1.2, 0.5] : [3, 1, 0.3];
    const reactIconPosition = width < 800 ? [-1.7, -0.5, -0.5] : [0.5, -1.3, -0.3];
