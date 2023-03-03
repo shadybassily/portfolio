@@ -1,5 +1,4 @@
 import Navbar from "./components/navbar/Navbar.component";
-// import Hero from "./components/hero/Hero.component";
 import About from "./components/about/About.component";
 import Projects from "./components/projects/Projects.component";
 import ContactForm from "./components/contact/ContactForm.component";
@@ -12,7 +11,6 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      {/* <Hero /> */}
       <HeroScene />
       <About />
       <Projects />

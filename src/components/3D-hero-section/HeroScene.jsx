@@ -18,7 +18,7 @@ export default function HeroScene() {
             <color attach="background" args={['#ecf0f1']} />
             <Lights />
             <Hero />
-            <OrbitControls />
+            <OrbitControls enableZoom={false} />
          </Canvas>
       </div>
    );
