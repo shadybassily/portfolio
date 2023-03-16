@@ -9,7 +9,7 @@ const Photo = ({width}) =>{
     return (
        <>
           <mesh position={photoPosition}>
-             <circleGeometry args={[1.5, 150]} />
+             <circleGeometry args={[1.8, 150]} />
              <meshBasicMaterial map={texture} side={DoubleSide} />
              <Shadow color="black" colorStop={0.2} opacity={0.2} position={[0, -2, 0]}/>
           </mesh>
