@@ -1,29 +1,38 @@
-import { Float, Text3D, useGLTF } from '@react-three/drei';
+import { Float, useGLTF } from '@react-three/drei';
+import { Suspense } from 'react';
 
+const Symbols = ({ width }) => {
+   const { scene: reactIcon } = useGLTF('./models/reactIcon.gltf');
+   const { scene: htmlIcon } = useGLTF('./models/html.glb');
+   const { scene: cssIcon } = useGLTF('./models/css.glb');
+   const { scene: jsIcon } = useGLTF('./models/js.glb');
 
-import { useLoader } from "@react-three/fiber";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-
-
-const symbolPath = "./public/models/cube1.glb"
-const Symbols = ({commonTextOptions,width}) => {
-   //  const { scene: reactIcon } = useGLTF("../../assets/models/cube1.glb");
-   //  reactIcon.scale.set(1, 1, 1);
+   const size = 0.35
+   const icons = [htmlIcon, cssIcon, jsIcon ]
+   const setIconstSize = (icons,size) => {
+      icons.forEach(icon=>{
+         icon.scale.set(size,size,size)
+      })
+      reactIcon.scale.set(1.8, 1.8, 1.5);
+   }
    
-   const gltf = useLoader(GLTFLoader, symbolPath)
-    const tagPoisiton = width < 800 ? [1, 1.2, 0.5] : [3, 1, 0.3];
-    const reactIconPosition = width < 800 ? [-1.7, -0.5, -0.5] : [0.5, -1.3, -0.3];
- 
-    return(
-       <Float speed={1.4} rotationIntensity={3} floatIntensity={2}>
-             <Text3D {...commonTextOptions} position={tagPoisiton} size={0.25}>
-                {'</>'}
-                <meshStandardMaterial color="#3498db" />
-             </Text3D>
-             <primitive object={gltf.scene} position={reactIconPosition} rotation={[-0.3, 1.3, 0.3]} />
-       </Float>
-    )
- }
- 
- 
- export default Symbols
+   setIconstSize(icons,size)
+
+   const htmlPosition = width < 800 ? [-1.7, -0.5, -0.5] : [3.7, -0.5, 0.2];
+   const cssPosition = width < 800 ? [-1.7, -0.5, -0.5] : [3.5, -1, 0.2];
+   const jsPosition = width < 800 ? [-1.7, -0.5, -0.5] : [3.3, -1.5, 0.2];
+   const reactIconPosition = width < 800 ? [-1.7, -0.5, -0.5] : [2.9, -1.5, 0.2];
+
+   return (
+         <Float rotationIntensity={0.1} speed={1}>
+            <Suspense fallback={null}>
+               <primitive object={htmlIcon} position={htmlPosition} />
+               <primitive object={cssIcon} position={cssPosition} />
+               <primitive object={jsIcon} position={jsPosition} />
+               <primitive object={reactIcon} position={reactIconPosition} rotation={[-0.3, 1.3, 0.3]}/>
+            </Suspense>
+         </Float>
+   );
+};
+
+export default Symbols;
