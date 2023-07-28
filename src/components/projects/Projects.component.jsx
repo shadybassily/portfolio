@@ -2,14 +2,21 @@ import React from 'react';
 import './projects.styles.css';
 import ProjectCard from './project-card/ProjectCard.component';
 import crownClothingPhoto from '../../assets/images/projects/crown.svg';
-import tetrisPhoto from '../../assets/images/projects/tetris.png';
 import calculatorPhoto from '../../assets/images/projects/calculator.jpg';
 import todoPhoto from '../../assets/images/projects/todo.jpg';
+import reactImage from '../../assets/images/projects/react-icon.png';
 
 export default function Projects() {
    const projectsData = [
       {
          id: 1,
+         name: 'Reusable React Components',
+         projectPhoto: reactImage,
+         gitHubUrl: 'https://github.com/shadybassily/reusable-react-components',
+         visitUrl: 'https://shadybassily.github.io/reusable-react-components/',
+      },
+      {
+         id: 2,
          name: 'Crown-Clothing',
          projectPhoto: crownClothingPhoto,
          gitHubUrl: 'https://github.com/shadybassily/crwn-clothing',
@@ -17,14 +24,14 @@ export default function Projects() {
       },
 
       {
-         id: 2,
+         id: 3,
          name: 'Calculator',
          projectPhoto: calculatorPhoto,
          gitHubUrl: 'https://github.com/shadybassily/Calculator',
          visitUrl: 'https://shadybassily.github.io/Calculator/',
       },
       {
-         id: 3,
+         id: 4,
          name: 'Todo App',
          projectPhoto: todoPhoto,
          gitHubUrl: 'https://github.com/shadybassily/todo-app/',
