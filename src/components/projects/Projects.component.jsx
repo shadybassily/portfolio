@@ -5,18 +5,26 @@ import crownClothingPhoto from '../../assets/images/projects/crown.svg';
 import calculatorPhoto from '../../assets/images/projects/calculator.jpg';
 import todoPhoto from '../../assets/images/projects/todo.jpg';
 import reactImage from '../../assets/images/projects/react-icon.png';
+import textEditor from '../../assets/images/projects/text-editor.png';
 
 export default function Projects() {
    const projectsData = [
       {
          id: 1,
+         name: 'Text Editor',
+         projectPhoto: textEditor,
+         gitHubUrl: 'https://github.com/shadybassily/text-editor/',
+         visitUrl: 'https://shadybassily.github.io/text-editor/',
+      },
+      {
+         id: 2,
          name: 'Reusable React Components',
          projectPhoto: reactImage,
          gitHubUrl: 'https://github.com/shadybassily/reusable-react-components',
          visitUrl: 'https://shadybassily.github.io/reusable-react-components/',
       },
       {
-         id: 2,
+         id: 3,
          name: 'Crown-Clothing',
          projectPhoto: crownClothingPhoto,
          gitHubUrl: 'https://github.com/shadybassily/crwn-clothing',
@@ -24,14 +32,14 @@ export default function Projects() {
       },
 
       {
-         id: 3,
+         id: 4,
          name: 'Calculator',
          projectPhoto: calculatorPhoto,
          gitHubUrl: 'https://github.com/shadybassily/Calculator',
          visitUrl: 'https://shadybassily.github.io/Calculator/',
       },
       {
-         id: 4,
+         id: 5,
          name: 'Todo App',
          projectPhoto: todoPhoto,
          gitHubUrl: 'https://github.com/shadybassily/todo-app/',
