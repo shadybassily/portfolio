@@ -7,7 +7,7 @@ import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 import Error from './Error.component';
-import AnimatingBtn from '../animating-btn/AnimatingBtn.component';
+import AnimatingBtn from 'src/components/Atoms/animating-btn/AnimatingBtn.component';
 
 export default function ContactForm() {
    // yup schema

@@ -20,23 +20,7 @@ a {
   overflow: hidden;
 }
 
-.underline-on-hover::before {
-  /* style */
-  content: "";
-  height: 45px;
-  width: 100%;
-  background-color: var(--green);
-  z-index: -1;
-  transition: 0.4s;
-  /* position */
-  position: absolute;
-  bottom: 0;
-  left: 0px;
-  transform: translateX(-100%);
-}
-.underline-on-hover:hover::before {
-  transform: translateX(0%);
-}
+
 /* !green color */
 .green {
   all: unset;

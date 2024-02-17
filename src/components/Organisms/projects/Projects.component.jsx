@@ -1,11 +1,11 @@
 import React from 'react';
 import './projects.styles.css';
 import ProjectCard from './project-card/ProjectCard.component';
-import crownClothingPhoto from '../../assets/images/projects/crown.svg';
-import calculatorPhoto from '../../assets/images/projects/calculator.jpg';
-import todoPhoto from '../../assets/images/projects/todo.jpg';
-import reactImage from '../../assets/images/projects/react-icon.png';
-import textEditor from '../../assets/images/projects/text-editor.png';
+import crownClothingPhoto from 'src/assets/images/projects/crown.svg';
+import calculatorPhoto from 'src/assets/images/projects/calculator.jpg';
+import todoPhoto from 'src/assets/images/projects/todo.jpg';
+import reactImage from 'src/assets/images/projects/react-icon.png';
+import textEditor from 'src/assets/images/projects/text-editor.png';
 
 export default function Projects() {
    const projectsData = [

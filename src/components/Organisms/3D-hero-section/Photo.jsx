@@ -1,7 +1,7 @@
 
 import { useLoader } from '@react-three/fiber';
 import { DoubleSide, TextureLoader } from 'three';
-import photo from '../../assets/images/personal-photo.png';
+import photo from 'src/assets/images/personal-photo.png';
 import { Shadow} from '@react-three/drei';
 const Photo = ({width}) =>{
     const photoPosition = width < 800 ? [0, 0, 0] : [2, 0, 0];
