@@ -20,7 +20,7 @@ export default function ProjectCard(props) {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         height: { xs: "100px", md: "200px" },
-        width: { xs: "35%", sm: "30%", lg: "15%", xl: "18%" },
+        width: { xs: "100%", sm: "15%", md: "15%" },
         cursor: "pointer",
         boxShadow: "",
         backgroundColor: "white",

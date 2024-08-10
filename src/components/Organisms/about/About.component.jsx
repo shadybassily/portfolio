@@ -10,11 +10,11 @@ export default function About() {
     <section className="section about" id="about">
       <h2 className="section-title">About Me</h2>
       <div className="info-container">
-        <motion.div
+        <div
           className="info"
-          initial={windowWidth > 800 ? { x: "-100%" } : { y: "-100%" }}
-          whileInView={windowWidth > 800 ? { x: 0 } : { y: 0 }}
-          transition={{ duration: 0.8 }}
+          // initial={windowWidth > 800 ? { x: "-100%" } : { y: "-100%" }}
+          // whileInView={windowWidth > 800 ? { x: 0 } : { y: 0 }}
+          // transition={{ duration: 0.8 }}
         >
           <p>
             • A highly motivated and self-drived web developer, who's in love with coding, and building things is a passion for me, with experience in
@@ -33,7 +33,7 @@ export default function About() {
           <a href={cv} download className="download-cv">
             <AnimatingBtn>Download CV</AnimatingBtn>
           </a>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
