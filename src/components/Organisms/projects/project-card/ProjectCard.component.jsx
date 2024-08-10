@@ -1,38 +1,37 @@
 import React from "react";
 import "./project-card.styles.css";
-import { AiFillGithub } from "react-icons/ai";
-import { BiWorld } from 'react-icons/bi';
+import { Stack, Typography } from "@mui/material";
 
 export default function ProjectCard(props) {
-  const{name,gitHubUrl,visitUrl,projectPhoto} = props.project
-  const openInNewTab = (url) => {
-    // setting target to _blank with window.open
+  const { name, visitUrl, projectPhoto } = props.project;
+
+  const handleClick = (url) => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
+
   return (
-    <div
-      className="card"
-      style={{ backgroundImage: `url(${projectPhoto})` }}>
-      <div
-        className="icons-container">
-        <div
-          className="github-icon"
-          onClick={() => {
-            openInNewTab(gitHubUrl);
-          }}
-        >
-          <AiFillGithub />
-        </div>
-        <div
-          className="visit-icon"
-          onClick={() => {
-            openInNewTab(visitUrl);
-          }}
-        >
-          <BiWorld />
-        </div>
-      </div>
-      <div className="project-name">{name}</div>
-    </div>
+    <Stack
+      onClick={() => {
+        handleClick(visitUrl);
+      }}
+      sx={{
+        backgroundImage: `url(${projectPhoto})`,
+        backgroundSize: "40% 50%;",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        height: { xs: "100px", md: "200px" },
+        width: { xs: "35%", sm: "30%", lg: "15%", xl: "18%" },
+        cursor: "pointer",
+        boxShadow: "",
+        backgroundColor: "white",
+        boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+        borderRadius: 2,
+        p: 2,
+        alignItems: "center",
+        justifyContent: "end",
+      }}
+    >
+      {/* <Typography sx={{ display: { xs: "none", md: "block" } }}>{name}</Typography> */}
+    </Stack>
   );
 }

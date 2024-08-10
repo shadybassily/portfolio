@@ -1,6 +1,7 @@
 .scene-container{
     /* border: 1px solid black; */
     height: 80vh;
+    cursor: grab;
 }
 
 @media (max-device-width : 800px){
